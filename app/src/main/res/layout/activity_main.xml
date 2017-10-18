@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context="com.it.mynewfeature.MainActivity">
 
     <android.support.v7.widget.Toolbar
@@ -22,5 +23,28 @@
             android:text="Android新特性"
             android:textColor="#ffffff" />
     </android.support.v7.widget.Toolbar>
+
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/drawerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <!-- 第一个布局，代表主界面-->
+        <LinearLayout
+            android:background="#55ff0000"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></LinearLayout>
+
+        <android.support.design.widget.NavigationView
+            android:id="@+id/design_navigation_view"
+            android:layout_width="260dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            app:headerLayout="@layout/header_layout"
+            app:itemIconTint="@color/colorPrimary"
+            app:itemTextColor="@color/colorAccent"
+            app:menu="@menu/menu_left" />
+
+    </android.support.v4.widget.DrawerLayout>
 
 </LinearLayout>

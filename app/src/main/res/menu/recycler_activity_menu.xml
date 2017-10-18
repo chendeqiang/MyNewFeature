@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/listView_vertical" android:title="垂直的ListView"></item>
+    <item android:id="@+id/listView_horizontal" android:title="水平的ListView"></item>
+    <item android:id="@+id/gridView_vertical" android:title="垂直的GridView"></item>
+    <item android:id="@+id/gridView_horizontal" android:title="水平的GridView"></item>
+    <item android:id="@+id/staggerView_vertical" android:title="垂直的StaggerView"></item>
+    <item android:id="@+id/staggerView_horizontal" android:title="水平的StaggerView"></item>
+
+</menu>
